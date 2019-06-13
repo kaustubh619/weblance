@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+.container1 {
+  width: 100%;
+  height: 100%;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.navbar1 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.7);
+}
+
+.navbar1 ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar1 ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar1 ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar1 ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+.height {
+height: 1400px;
+}
+
+.height1 {
+height: 100px;
+}
+
+.height2 {
+height: 950px;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  background-size: cover;
+  background-position: center center;
+}
+/*===============================
+             Footer
+===============================*/
+
+.footer{
+    background-color: white;
+    color:black;
+    height:240px;
+    width:100%;
+    clear: both;
+    position: relative;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.logo{
+   text-align:center;
+   padding-top:30px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+#right {
+  flex: 1;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #left {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 376px) {
+  #right {
+    display: none;
+  }
+}
+.button1 {
+padding-top: 5px;
+border: 2px solid black;
+background-color: white;
+color: black;
+margin-left: 50px;
+margin-top: 7%;
+height: 40px;
+width: 150px;
+font-size: 1.8rem;
+border-radius: 5px;
+}
+
+@media (max-width: 376px) {
+  #largeB {
+    display: none;
+  }
+}
+
+svg {
+margin-top: 10%;
+width: 85%;
+margin-left: 50px;
+}
+
+@media (min-width: 376px) {
+  #smallB {
+    display: none;
+  }
+}
+
+.button2 {
+padding-top: 5px;
+border: 2px solid black;
+background-color: white;
+color: black;
+margin-left: 50px;
+margin-top: 7%;
+height: 30px;
+width: 120px;
+font-size: 1.3rem;
+border-radius: 5px;
+}
+
+.button1:hover {
+background-color: blue;
+color: white;
+border: none;
+}
+
+.button2:hover {
+background-color: blue;
+color: white;
+border: none;
+}
+
+@media (max-width: 376px) {
+  #smallS {
+    display: none;
+  }
+}
+
+@media (min-width: 376px) {
+  #largeS {
+    display: none;
+  }
+}
+
+.small-title {
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+}
+
+h4 {
+font-weight: 600;
+font-size: 48px;
+color: #333;
+margin: 0;
+line-height: 1,3;
+letter-spacing: .0001em;
+}
+
+.project-info {
+background: #FFF;
+padding: 20px 20px 20px;
+}
+
+.overlay {
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+background: white;
+width: 100%;
+height: 100%;
+}
+
+.box1 {
+position: relative;
+overflow: hidden;
+}
